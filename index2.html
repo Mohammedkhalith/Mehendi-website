@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PwrettieHenna — Shop Henna Cones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="glow.css" />
+<link rel="icon" href="photos/logo.png" type="image/png">
+</head>
+<body class="shop-theme">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="photos/logo.png" alt="PwrettieHenna Logo" class="logo-img">
+    </a>
+    <button class="cart-trigger" id="cartTrigger" aria-label="Open cart">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="19" cy="21" r="1"></circle>
+        <path d="M1 1h3.6l2.5 12.6a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 6H6"></path>
+      </svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ SHOP ============ -->
+<main id="shop">
+  <section class="shop-intro">
+    <h1>Shop Henna Cones</h1>
+    <p>100% natural, organic bridal-quality henna cones.</p>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="bridal">Bridal Quality</button>
+      <button class="filter-pill" data-filter="organic">Organic</button>
+      <button class="filter-pill" data-filter="colored">Colored/Jagua</button>
+    </div>
+  </section>
+
+  <section class="product-grid" id="productGrid">
+    <!-- product cards injected by script.js -->
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="photos/logo.png" alt="PwrettiieHenna Logo" class="logo-img">
+        </a>
+        <p>100% natural, organic bridal-quality henna cones delivered directly to your doorstep. Crafted with love for perfect stains.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index2.html">Shop Cones</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Shop Categories</h4>
+        <ul>
+          <li><a href="#">Bridal Quality</a></li>
+          <li><a href="#">Organic Cones</a></li>
+          <li><a href="#">Jagua / Colored</a></li>
+          <li><a href="#">Aftercare Products</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pwrettiehenna. All rights reserved.</p>
+      <p>Crafted with ❤️ and henna</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-header">
+    <h2>Your Cart</h2>
+    <button class="icon-btn" id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+
+  <div class="drawer-body" id="cartItems">
+    <!-- cart items injected here -->
+  </div>
+
+  <div class="drawer-footer" id="cartFooter">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">₹0.00</span>
+    </div>
+    <button class="btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+    <button class="btn-text" id="continueShopping">Continue shopping</button>
+  </div>
+</aside>
+
+<!-- ============ CHECKOUT MODAL ============ -->
+<div class="overlay" id="checkoutOverlay"></div>
+<div class="modal" id="checkoutModal" aria-label="Checkout">
+  <div class="modal-header">
+    <h2>Checkout</h2>
+    <button class="icon-btn" id="closeCheckout" aria-label="Close checkout">&times;</button>
+  </div>
+
+  <div class="modal-body">
+    <form id="checkoutForm">
+      <div class="modal-columns">
+        <div class="modal-col">
+          <h3>Contact details</h3>
+          <label>Full name
+            <input type="text" name="name" required placeholder="Fathima Rahman" />
+          </label>
+          <label>Email
+            <input type="email" name="email" required placeholder="you@email.com" />
+          </label>
+          <label>Phone
+            <input type="tel" name="phone" required placeholder="+91 93605 99885" />
+          </label>
+
+          <h3>Shipping address</h3>
+          <label>Address
+            <input type="text" name="address" required placeholder="Street, Apartment" />
+          </label>
+          <div class="input-row">
+            <label>City
+              <input type="text" name="city" required placeholder="Chennai" />
+            </label>
+            <label>PIN code
+              <input type="text" name="pin" required placeholder="600001" />
+            </label>
+          </div>
+
+          <h3>Payment method</h3>
+          <div class="payment-options">
+            <label class="radio-card">
+              <input type="radio" name="payment" value="cod" checked />
+              <span>Cash on Delivery</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="payment" value="upi" />
+              <span>UPI</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-col order-summary">
+          <h3>Order summary</h3>
+          <div id="checkoutItems"></div>
+          <div class="summary-row"><span>Subtotal</span><span id="summarySubtotal">₹0.00</span></div>
+          <div class="summary-row"><span>Shipping</span><span id="summaryShipping">₹30.00</span></div>
+          <div class="summary-row total"><span>Total</span><span id="summaryTotal">₹0.00</span></div>
+          <button type="submit" class="btn-primary btn-full">Place Order</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ============ UPI MODAL ============ -->
+<div class="overlay" id="upiOverlay"></div>
+<div class="modal" id="upiModal" aria-label="UPI Payment">
+  <div class="modal-header">
+    <h2>Scan to Pay</h2>
+    <button class="icon-btn" id="closeUpi" aria-label="Close">&times;</button>
+  </div>
+  <div class="modal-body" style="text-align: center;">
+    <p>Please pay <strong style="color: var(--gold-light);">₹<span id="upiAmountText">0.00</span></strong> to complete your order.</p>
+    <div style="margin: 24px 0;">
+      <img id="upiQrCode" src="" alt="UPI QR Code" style="width: 200px; height: 200px; border-radius: 12px; border: 4px solid white;">
+    </div>
+    <a href="#" id="upiAppBtn" class="btn-primary btn-full" style="display: block; margin-bottom: 12px; text-decoration: none;">Pay with UPI App</a>
+    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">UPI ID: samihasam559@okhdfcbank</p>
+    <button id="confirmUpiPayment" class="btn-outline btn-full" style="width: 100%;">I've made the payment</button>
+  </div>
+</div>
+
+<!-- ============ CONFIRMATION MODAL ============ -->
+<div class="overlay" id="confirmOverlay"></div>
+<div class="modal modal-confirm" id="confirmModal" aria-label="Order confirmation">
+  <div class="confirm-icon">✓</div>
+  <h2>Order placed</h2>
+  <p>Thank you<span id="confirmName"></span> — your henna cones are on their way.</p>
+  <div class="confirm-meta">
+    <div><span>Order ID</span><strong id="confirmOrderId"></strong></div>
+    <div><span>Total paid</span><strong id="confirmTotal"></strong></div>
+    <div><span>Estimated delivery</span><strong id="confirmDelivery"></strong></div>
+  </div>
+  <button class="btn-primary" id="confirmClose">Continue shopping</button>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script src="border-glow.js"></script>
+<script src="glow.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
