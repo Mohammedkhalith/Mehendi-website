@@ -1,0 +1,30 @@
+/* ---------- BORDER GLOW ---------- */
+.glow-host {
+  position: relative;
+  isolation: isolate;
+  transform: translate3d(0, 0, 0.01px);
+  overflow: visible !important;
+}
+.glow-layer {
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+  inset: -1px; /* Covers the existing 1px border to prevent a double-border look */
+}
+.glow-outer-span {
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.glow-inner-span {
+  position: absolute;
+  border-radius: inherit;
+}
+.glow-layer,
+.glow-outer-span {
+  transition: opacity 0.75s ease-in-out;
+}
+.glow-layer.glow-visible,
+.glow-outer-span.glow-visible {
+  transition: opacity 0.25s ease-out;
+}
